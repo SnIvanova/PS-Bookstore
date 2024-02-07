@@ -16,23 +16,20 @@ function getBooksByGenre($conn, $genre) {
 
 function displayBooks($books, $selected_genre = null) {
     if ($books) {
-        echo "<h2>Books " . ($selected_genre ? "in $selected_genre" : "by Genre") . "</h2>";
-        echo "<table class='table'>";
-        echo "<tr><th>Image</th><th>Titolo</th><th>Autore</th><th>Anno di pubblicazione</th><th>Genere</th><th>Actions</th></tr>";
-        
-        foreach ($books as $book) {
-            echo "<tr>";
-            echo "<td><img src='".$book['image_path']."' alt='".$book['titolo']."' style='width: 100px;'></td>";
-            echo "<td>".$book['titolo']."</td>";
-            echo "<td>".$book['autore']."</td>";
-            echo "<td>".$book['anno_pubblicazione']."</td>";
-            echo "<td>".$book['genere']."</td>";
-            echo "<td><a href='modifica_libro.php?id=".$book['id']."'>Modifica</a> | <a href='rimuovi_libro.php?id=".$book['id']."'>Rimuovi</a></td>";
-            echo "</tr>";
-        }
-        
-        echo "</table>";
-    } else {
+        ?>
+        <div class="section-container p-2 p-xl-4">
+            <h4 class="fs-6 fw-bolder my-4 mb-3">
+                <?php echo "<h2>Books " . ($selected_genre ? "in $selected_genre" : "by Genre") . "</h2>"; ?>
+            </h4>
+            <div class="row m-0">
+                <?php foreach ($books as $book) { ?>
+                   
+                        <?php include 'book_card.php'; ?>
+                    
+                <?php } ?>
+            </div>
+        </div>
+    <?php } else {
         echo "Nessun libro trovato.";
     }
 }
