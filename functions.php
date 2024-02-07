@@ -18,11 +18,11 @@ function displayBooks($books, $selected_genre = null) {
     if ($books) {
         echo "<h2>Books " . ($selected_genre ? "in $selected_genre" : "by Genre") . "</h2>";
         echo "<table class='table'>";
-        echo "<tr><th>ID</th><th>Titolo</th><th>Autore</th><th>Anno di pubblicazione</th><th>Genere</th><th>Actions</th></tr>";
+        echo "<tr><th>Image</th><th>Titolo</th><th>Autore</th><th>Anno di pubblicazione</th><th>Genere</th><th>Actions</th></tr>";
         
         foreach ($books as $book) {
             echo "<tr>";
-            echo "<td>".$book['id']."</td>";
+            echo "<td><img src='".$book['image_path']."' alt='".$book['titolo']."' style='width: 100px;'></td>";
             echo "<td>".$book['titolo']."</td>";
             echo "<td>".$book['autore']."</td>";
             echo "<td>".$book['anno_pubblicazione']."</td>";
