@@ -21,7 +21,7 @@ function displayBooks($books, $selected_genre = null) {
             <h4 class="fs-6 fw-bolder my-4 mb-3">
                 <?php echo "<h2>Books " . ($selected_genre ? "in $selected_genre" : "by Genre") . "</h2>"; ?>
             </h4>
-            <div class="row m-0">
+            <div class="row m-0 row-cols-1 row-cols-md-3 g-4">
                 <?php foreach ($books as $book) { ?>
                    
                         <?php include 'book_card.php'; ?>
@@ -34,3 +34,4 @@ function displayBooks($books, $selected_genre = null) {
     }
 }
 ?>
+

@@ -22,8 +22,6 @@ if (isset($_GET['genre'])) {
         <p>Nessun libro trovato</p>
     <?php endif; ?>
 
-    <h2>Aggiungi un nuovo libro</h2>
-    <?php include('add_book_form.php'); ?>
 </div>
 
 <?php 
