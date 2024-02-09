@@ -11,23 +11,7 @@
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.php">
-    <script>
-    document.querySelectorAll('.author-name').forEach(item => {
-        item.addEventListener('click', event => {
-            const authorId = event.currentTarget.getAttribute('data-author-id');
-            
-            fetch(`retrieve_books.php?author_id=${author_id}`)
-                .then(response => response.json())
-                .then(books => {
-                    
-                    console.log(books); 
-                })
-                .catch(error => {
-                    console.error('Error fetching books:', error);
-                });
-        });
-    });
-</script>
+  
   </head>
 <body>
 
