@@ -12,12 +12,13 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.php">
   
+    
   </head>
 <body>
 
 <header class="head">
     <div class="logo border-bottom">
-      <img class="w-100" src="assets/images/logo.svg" alt="" />
+    <a href="index.php"><img class="w-100" src="assets/images/logo.svg" alt="" /></a>
       <a
         class="navbar-toggler d-block d-lg-none"
         type="button"
@@ -33,38 +34,14 @@
     <div id="navbarSupportedContent" class="navcol pt-0 d-none d-lg-block">
       <ul>
         <li class="border-bottom">
-          <a href="index.php"
-            ><i class="bi bi-house-door fs-6 me-2"></i> Home</a
-          >
+          <a href="index.php">
+            <i class="bi bi-house-door fs-6 me-2"></i> Home
+            </a>
         </li>
+
         <li class="border-bottom">
-          <a href=""
-            ><i class="bi fs-6 me-2 bi-window-stack"></i>
-            <i class="bi fs-6 bi-google-play"></i> Applications</a
-          >
-        </li>
-   
-        <li class="border-bottom">
-          <a href="index.html"
-            ><i class="bi me-2 fs-6 bi-controller"></i> Games</a
-          >
-        </li>
-        <li class="border-bottom">
-          <a href="index.html"
-            ><i class="bi me-2 fs-6 bi-journal-bookmark"></i> Books</a
-          >
-        </li>
-        <li class="border-bottom">
-          <a href="index.html"
-            ><i class="bi me-2 fs-6 bi-music-note-beamed"></i> Music</a
-          >
-        </li>
-        <li class="border-bottom">
-          <a href="index.html"><i class="bi fs-6 me-2 bi-film"></i> Movies</a>
-        </li>
-        <li class="border-bottom">
-          <a href="index.html"
-            ><i class="bi me-2 fs-6 bi-card-image"></i> Wallpapers</a
+        <a href="favorite_books.php">
+            <i class="bi bi-bookmark-heart me-2 fs-6"></i> My books</a
           >
         </li>
         <li class="border-bottom">
@@ -116,19 +93,6 @@
         </div>
       
 
-        <div class="col-md-4 d-lg-flex justify-content-lg-end align-items-center">
-          <div class="dropdown">
-              <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Name Lastname
-              </button>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Cart</a>
-                  <a class="dropdown-item" href="#">My Books</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Logout</a>
-              </div>
-          </div>
-      </div>
       </div>
     </div>
 

@@ -1,4 +1,6 @@
 <?php 
+session_start(); 
+
 include('navbar.php');
 include('db.php');
 include('functions.php');
@@ -14,12 +16,12 @@ if (isset($_GET['genre'])) {
 
 <div class="container">
     
-    <h2>Elenco dei libri disponibili</h2>
-   
+    <h2>Avaliable Books</h2>
+    <?php echo session_id();?>
     <?php if ($books): ?>
         <?php displayBooks($books); ?>
     <?php else: ?>
-        <p>Nessun libro trovato</p>
+        <p>No books in your library</p>
     <?php endif; ?>
 
 </div>
