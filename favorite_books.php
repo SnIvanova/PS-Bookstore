@@ -27,7 +27,7 @@ if(isset($_SESSION['favorite_books']) && !empty($_SESSION['favorite_books'])) {
             
             echo '<form method="post">';
             echo '<input type="hidden" name="remove_book_id" value="' . $book['id'] . '">';
-            echo '<button type="submit" class="btn btn-danger btn-sm p-1 mb-2 mb-md-0">Dont like anymore</button>';
+            echo '<button type="submit" class="btn btn-danger btn-sm p-1 my-2 mb-md-0">Dont like anymore</button>';
             echo '</form>';
             echo '</div>';
             echo '</div>';

@@ -17,7 +17,7 @@ if (isset($_GET['genre'])) {
 <div class="container">
     
     <h2>Avaliable Books</h2>
-    <?php echo session_id();?>
+   
     <?php if ($books): ?>
         <?php displayBooks($books); ?>
     <?php else: ?>

@@ -45,12 +45,12 @@
           >
         </li>
         <li class="border-bottom">
-          <a href="about.html"
-            ><i class="bi me-2 fs-6 bi-info-square"></i> About Us</a
-          >
+          <a href="#" data-bs-toggle="modal" data-bs-target="#aboutUsModal">
+            <i class="bi me-2 fs-6 bi-info-square"></i> About Us
+          </a>
         </li>
         <li class="border-bottom">
-          <a href="contact.html"
+          <a href="#"
             ><i class="bi me-2 bi-chat-left-dots"></i> Contact Us</a
           >
         </li>
@@ -141,6 +141,26 @@
             </div>
         </div>
     </div>
+</div>
+
+
+<!-- Modal about-->
+<div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutUsModalLabel">About Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <p>Welcome to Ebook. Created by Snizhana Ivanova  2024...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
